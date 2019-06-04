@@ -1,0 +1,16 @@
+STRUCTURE:
+
+workspace ($GOPATH)
+	- bin
+		- a bunch of binaries ($GOBIN)
+	- pkg
+		- installed packages
+	- src
+		-github.com
+			- <username>
+				- project1
+					- main.go
+				- project2
+					- module.go
+
+"go install" will build+install your modules into /pkg/ and you'll be able to import them
